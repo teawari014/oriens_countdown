@@ -92,13 +92,20 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     .timer {
         font-size: 1.2em;
         white-space: nowrap;
     }
+
     #thumbnail-text {
         font-size: 1em;
         white-space: nowrap;
         text-align: center;
+    }
+
+    /* カウントダウンの数字を大きくする */
+    #countdown {
+        font-size: 6rem; /* スマホ表示時にカウントダウンの数字を大きくする */
     }
 }
