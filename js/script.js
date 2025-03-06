@@ -1,6 +1,6 @@
 window.onload = function() {
-    // カウントダウン開始
-    var countdownDate = new Date().getTime() + 60000;  // ページが読み込まれてから1分後
+    // カウントダウン終了日時を2025年3月7日21:00に設定
+    var countdownDate = new Date("2025-03-07T21:00:00").getTime();
     var countdown = document.getElementById('countdown');
     var questionImages = document.querySelectorAll('.question');
     var thumbnail = document.getElementById('thumbnail');
@@ -22,7 +22,7 @@ window.onload = function() {
         document.getElementById('minute').textContent = minutes < 10 ? "0" + minutes : minutes;
         document.getElementById('second').textContent = seconds < 10 ? "0" + seconds : seconds;
 
-        // 1分経過後
+        // 3月7日21:00に到達したら
         if (distance < 0) {
             clearInterval(countdownInterval);
             countdown.style.display = "none";  // カウントダウンを消す
